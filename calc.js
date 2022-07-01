@@ -43,7 +43,7 @@ function operate(operator, num1, num2){
         return sum(num1, num2)
     } else if (operator == '-') {
         return sub(num1, num2)
-    } else if (operator == '*') {
+    } else if (operator == 'x') {
         return multiply(num1, num2)
     } else if (operator == '/') {
         return divide(num1, num2)
@@ -128,7 +128,11 @@ function funMult() {
 
 function funEqual() {
     console.log("=")
-    input += " = "
+    var test = input.split(" ")
+    var num1 = test[0]
+    var operator = test[1]
+    var num2 = test[2]
+    input = operate(operator, num1, num2)
     calcDisplay.innerHTML = input
 }
 

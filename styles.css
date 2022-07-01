@@ -1,0 +1,33 @@
+* {
+    background-color: darkgoldenrod;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    border-radius: 25px;
+    height: 500px;
+    width: 550px;
+}
+
+#calculator-body > * {
+    border: solid white;
+    /*background-color: white;*/
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+#calculator-display {
+    grid-column: 1 / 5;
+    padding: 20px 200px;
+}

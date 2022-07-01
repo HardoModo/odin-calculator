@@ -20,7 +20,7 @@ var calcDecimal = document.getElementById("decimal")
 var calcClear = document.getElementById("clear")
 var calcDivide = document.getElementById("divide")
 
-var input = "Filler Text"
+var input = ""
 
 function sum(num1, num2){
     return num1 + num2
@@ -56,66 +56,98 @@ calcDisplay.innerHTML = input
 
 function fun1() {
     console.log("1")
+    input += "1"
+    calcDisplay.innerHTML = input
 }
 
 function fun2() {
     console.log("2")
+    input += "2"
+    calcDisplay.innerHTML = input
 }
 
 function fun3() {
     console.log("3")
+    input += "3"
+    calcDisplay.innerHTML = input
 }
 
 function fun4() {
     console.log("4")
+    input += "4"
+    calcDisplay.innerHTML = input
 }
 
 function fun5() {
     console.log("5")
+    input += "5"
+    calcDisplay.innerHTML = input
 }
 
 function fun6() {
     console.log("6")
+    input += "6"
+    calcDisplay.innerHTML = input
 }
 
 function fun7() {
     console.log("7")
+    input += "7"
+    calcDisplay.innerHTML = input
 }
 
 function fun8() {
     console.log("8")
+    input += "8"
+    calcDisplay.innerHTML = input
 }
 
 function fun9() {
     console.log("9")
+    input += "9"
+    calcDisplay.innerHTML = input
 }
 
 function funPlus() {
     console.log("+")
+    input += " + "
+    calcDisplay.innerHTML = input
 }
 
 function funMinus() {
     console.log("-")
+    input += " - "
+    calcDisplay.innerHTML = input
 }
 
 function funMult() {
     console.log("x")
+    input += " x "
+    calcDisplay.innerHTML = input
 }
 
 function funEqual() {
     console.log("=")
+    input += " = "
+    calcDisplay.innerHTML = input
 }
 
 function funDecimal() {
     console.log(".")
+    input += "."
+    calcDisplay.innerHTML = input
 }
 
 function funClear() {
     console.log("Clear")
+    input = ""
+    calcDisplay.innerHTML = input
 }
 
 function funDivide() {
     console.log("/")
+    input += " / "
+    calcDisplay.innerHTML = input
 }
 
 calcOne.addEventListener("click", fun1)
